@@ -5,10 +5,10 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/calendar-ui'));
+app.use(express.static('./dist/Calendar-UI'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/calendar-ui/'}),
+    res.sendFile('index.html', {root: 'dist/Calendar-UI/'}),
 );
 
 // Start the app by listening on the default Heroku port
