@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TodayComponent } from './today/today.component';
 import { AllPlanComponent } from './all-plan/all-plan.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatModule } from './mat/mat.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,8 +18,12 @@ import { AllPlanComponent } from './all-plan/all-plan.component';
     AllPlanComponent
   ],
   imports: [
+    ReactiveFormsModule,
+    HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatModule
   ],
   providers: [],
   bootstrap: [AppComponent]

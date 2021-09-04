@@ -1,2 +1,13 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<mat-tab-group>
+    <mat-tab label="Today">
+        <mat-card>
+            <app-today></app-today>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="All Meetings">
+        <mat-card>
+            <app-all-plan>                
+            </app-all-plan>
+        </mat-card>
+    </mat-tab>
+</mat-tab-group>
