@@ -1,6 +1,8 @@
-.radio{
-    margin: 1%;
+.mat-card-top{
+    margin-top: 20px;
 }
-table {
-    width: 100%;
+input[type="time"]::-webkit-calendar-picker-indicator{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABeUlEQVRIidXVT04VQRAG8N8YEhY8jQcgISGCK/8dAFgQ2LD3LKK3wJVxBxITr2CC4XkDF8AF4LFBF0+2PBZTnTfATE9jdOGXVDqprvq+muruGv4xqsK4yZ/mPyivpRezmPmLfDdQYRdf8fi+yZv4iBP8DjsO30bEzGOkbuURFkuIn2IYSTkbYhkL+BG+T33ka/gVwWd4g+eYC3uB7UbVP7GKh9jBo77KE/leEHZhDvsNkaW+yuFbJHxx9xqmtjRRqVsywWEf+YZpW9oqbxMQsald682N2+/gdaw7uOyrpoFLvL/F0YqTqOJZx37XF1Af/ER9hTsxjqCug80JDGJv3HR2jYrSGdXGdZUTOI216yVWGfGUc5YT+B7rVgdJDilnmAtK13Sk7mkpBjjXck3bcBiB+8rOosLnyDkoqWZZ/eyTSG5UDBrkF3hSIkA9uJLICG/xMggHeIV3pm25wEopecKS6VzK2cF9Km/DOj6ofyTjsKPw9R7o/49refBsYacR8q8AAAAASUVORK5CYII=");
+    background-repeat: 1;
+    padding: 6px;
 }

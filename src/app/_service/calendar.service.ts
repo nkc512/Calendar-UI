@@ -17,5 +17,12 @@ export class CalendarService {
     
     return this.http.get<any>(this.baseUrl);
   }
-
+  postMeeting(meet:Meeting):Observable<any>
+  {
+    return this.http.post<any>(this.baseUrl,meet);
+  }
+  getAllMeetings()
+  {
+    return this.http.get<any>(this.baseUrl+'/all');
+  }
 }
