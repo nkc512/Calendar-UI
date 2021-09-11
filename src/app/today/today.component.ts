@@ -47,13 +47,17 @@ export class TodayComponent implements OnInit  {
 
     const meet=new Meeting(name,dtstart.toISOString(),dtend.toISOString(),frequency);
     this.calendarService.postMeeting(meet).subscribe(data=>{
-      console.log('Meeting added successfully '+ data);
+      console.log('Meeting added successfully '+ data.message);
     },err=>{
-      console.log('Could not add meeting '+err);
+      console.log(err);
+      
+      console.log('Could not add meeting '+err.message);
     });
   }
   getTodayData()
   {
+    console.log('getTodayData called');
+    
     this.calendarService.getTodayData().subscribe(data=>{
       console.log(data);
       this.dataSource=data;
